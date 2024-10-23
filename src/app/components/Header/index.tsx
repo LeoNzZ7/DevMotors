@@ -15,8 +15,6 @@ export const Header = () => {
         return () => window.removeEventListener("scroll", scrollHandler)
     }, [])
 
-
-
     return (
         <header
             style={{ opacity: top ? "100%" : "90%", boxShadow: top ? "0px 6px 20px - 12px rgba(0, 0, 0, 0.6)" : "" }}
