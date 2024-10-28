@@ -10,6 +10,7 @@ interface DataProps {
       heading: string;
       cta_button: {
         title: string;
+        url: string;
       };
       url: string;
       about: {
@@ -33,8 +34,7 @@ interface DataProps {
         time: string;
       };
     };
-};
-
+  };
 }
 
 export async function getDataHome(): Promise<DataProps> {
