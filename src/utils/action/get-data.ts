@@ -1,4 +1,4 @@
-interface DataProps {
+export interface DataProps {
   object: {
     slug: string;
     title: string;
