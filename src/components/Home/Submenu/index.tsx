@@ -9,11 +9,12 @@ export const Submenu = () => {
     const [windowWidth, setWindowWidth] = useState<number | null>(null);
 
     useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+            if (window.innerWidth > 640) setIsOpen(false);
+        };
+
         if (typeof window !== 'undefined') {
-            const handleResize = () => {
-                setWindowWidth(window.innerWidth);
-                if (window.innerWidth > 640) setIsOpen(false);
-            };
             setWindowWidth(window.innerWidth);
             window.addEventListener('resize', handleResize);
             return () => window.removeEventListener('resize', handleResize);
@@ -47,7 +48,7 @@ export const Submenu = () => {
                         </button>
                     </li>
                 </ul>
-            ) : (windowWidth ?? 0) >= 640 && (
+            ) : windowWidth !== null && windowWidth >= 640 && (
                 <ul className="hidden sm:flex py-3">
                     <li className="bg-gray-950 text-white py-2 px-3 rounded">
                         <Link href="/">Página 1</Link>

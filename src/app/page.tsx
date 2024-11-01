@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import { Footer } from "@/components/Home/Footer";
 import { Services } from "@/components/Home/Services";
 import { Submenu } from "@/components/Home/Submenu";
 import { getDataHome } from "@/utils/action/get-data";
@@ -18,6 +19,7 @@ export default async function Home() {
         icon={<Phone size={24} color="#FFF" />}
       />
       <Services object={object} />
+      <Footer object={object} />
     </main>
   )
 }
