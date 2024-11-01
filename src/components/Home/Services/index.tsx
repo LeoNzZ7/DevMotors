@@ -6,7 +6,7 @@ export const Services = ({ object }: ServicesProps) => {
     return (
         <Container>
             <>
-                <section className="flex w-full flex-col sm:flex-row items-center justify-between gap-6 sm:gap-10 my-7 pt-5 px-5 sm:px-0" id="serviços" >
+                <section className="flex w-full flex-col sm:flex-row items-center justify-between gap-6 sm:gap-10 my-7 pt-5 px-5" id="serviços" >
                     <article className="flex justify-center items-center flex-col gap-3 w-full" >
                         <h1 className="font-bold text-3xl self-center sm:self-start" >Sobre</h1>
                         <p className="leading-[150%] sm:text-lg sm:max-w-[80%] self-center sm:self-start" >{object.metadata.about.description}</p>

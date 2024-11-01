@@ -39,7 +39,7 @@ export interface DataProps {
 
 export async function getDataHome(): Promise<DataProps> {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/objects/671d5f8ef37f2376cff528a2?read_key=${process.env.READ_KEY}&depth=1&props=slug,title,metadata`)
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/objects/67253fe86bf9b88ef228c3e2?read_key=${process.env.READ_KEY}&props=slug,title,metadata`)
     
         if(!res.ok) {
             throw new Error("Failed to get data");

@@ -19,7 +19,7 @@ export const Hero = ({ bannerUrl, buttonTitle, buttonUrl, heading, icon }: HeroP
                 <a
                     target="_blank"
                     href={buttonUrl}
-                    className="flex items-center justify-center gap-14 mt-3 bg-green-500 rounded-md py-2 px-6 text-white font-medium hover:bg-green-600 transition-colors duration-300" >
+                    className="flex items-center justify-center gap-2 mt-3 bg-green-500 rounded-md py-2 px-6 text-white font-medium hover:bg-green-600 transition-colors duration-300" >
                     {icon}
                     {buttonTitle}
                 </a>
