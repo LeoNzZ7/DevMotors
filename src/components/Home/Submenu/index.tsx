@@ -41,7 +41,7 @@ export const Submenu = ({ menu }: { menu: MenuProps }) => {
                         <li key={index} className="py-2 px-3 rounded text-3xl flex flex-col items-center gap-3 font-bold duration-300 bg-transparent">
                             <Link
                                 className="hover:bg-gray-950 hover:text-white p-2 rounded duration-300 transition-colors"
-                                href={menu.slug}
+                                href={`/post/${menu.slug}`}
                             >
                                 {menu.title}
                             </Link>
@@ -58,7 +58,9 @@ export const Submenu = ({ menu }: { menu: MenuProps }) => {
                 <ul className="hidden sm:flex py-3 gap-2">
                     {menu.objects.map((menu, index) => (
                         <li key={index} className="bg-gray-900 hover:bg-black duration-300 transition-colors text-white py-2 px-3 rounded">
-                            <Link href={menu.slug}>{menu.title}</Link>
+                            <Link href={`/post/${menu.slug}`}>
+                                {menu.title}
+                            </Link>
                         </li>
                     ))}
                 </ul>

@@ -18,6 +18,7 @@ export const Services = ({ object }: ServicesProps) => {
                             alt="Imagem ilustrativa sobre a empresa"
                             quality={100}
                             fill={true}
+                            sizes="(max-width: 700px) 100vw, (max-width: 1024px) 75vw, 60vw"
                         />
                     </figure>
                 </section>
@@ -36,6 +37,7 @@ export const Services = ({ object }: ServicesProps) => {
                                     alt="Imagem do serviço"
                                     quality={100}
                                     fill={true}
+                                    sizes="(max-width: 700px) 100vw, (max-width: 1024px) 75vw, 60vw"
                                 />
                             </figure>
                             <p

@@ -31,6 +31,7 @@ export const Hero = ({ bannerUrl, buttonTitle, buttonUrl, heading, icon }: HeroP
                     quality={100}
                     fill={true}
                     alt={heading}
+                    sizes="(max-width: 700px) 100vw, (max-width: 1024px) 75vw, 60vw"
                     className="w-full object-cover relative opacity-30 bg-fixed" />
             </div>
         </main>
