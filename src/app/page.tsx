@@ -9,8 +9,6 @@ export default async function Home() {
   const { object } = await getDataHome()
   const menu = await getSubMenu()
 
-  console.log(menu)
-
   return (
     <main className="w-full" >
       <Submenu menu={menu} />
